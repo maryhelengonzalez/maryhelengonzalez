@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Maryhelen Gonzalez | Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,6 +40,13 @@
 
     a {
       color: #38bdf8;
+      margin-right: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
     }
   </style>
 </head>
@@ -45,47 +54,46 @@
 <body>
 
 <header>
-                                  <h1>Maryhelen Gonzalez</h1>
-                     <p>Cybersecurity • Software Engineering • Network Security</p>
-                                         <p>📍 New York</p>
+  <h1>Maryhelen Gonzalez</h1>
+  <p>Cybersecurity • Software Engineering • Network Security</p>
+  <p>📍 New York</p>
 </header>
 
+<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <p>
     Computer Science graduate focused on cybersecurity, system security, and networking.
-    I build and analyze secure systems and simulate real-world attack scenarios. My goal is to contribute to secure software systems and continue growing in cybersecurity engineering roles.
+    I build and analyze secure systems and simulate real-world attack scenarios.
   </p>
+</section>
 
+<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
-  
-<div class="card">
-  <h3>📊 Loan AI Intelligence Dashboard (Full Stack AI App)</h3>
 
-  <a href="https://github.com/maryhelengonzalez/loan-ai-platform" target="_blank">
-    View Code (GitHub)
-  </a>
-  <a href="https://maryhelengonzalez.vercel.app" target="_blank">
-  Live Demo
-</a>
-  <p>
-    Full-stack AI-powered financial analysis dashboard built with React, FastAPI, and MongoDB.
-    Upload loan documents, extract insights using AI, and visualize risk scoring with real-time analytics.
-  </p>
+  <div class="card">
+    <h3>📊 Loan AI Intelligence Dashboard</h3>
 
-  <p><b>Tech Stack:</b> React, FastAPI, MongoDB, OpenAI API, Recharts, JWT Auth</p>
-</div>  
+    <a href="https://github.com/maryhelengonzalez/loan-ai-platform" target="_blank">
+      View Code
+    </a>
+
+    <a href="https://maryhelengonzalez.vercel.app" target="_blank">
+      Live Demo
+    </a>
+
+    <p>
+      Full-stack AI-powered financial analysis dashboard built with React, FastAPI, and MongoDB.
+      Upload loan documents, extract insights, and visualize risk scoring.
+    </p>
+
+    <p><b>Tech Stack:</b> React, FastAPI, MongoDB, OpenAI API, Recharts, JWT Auth</p>
+  </div>
 </section>
-</section>
-  <h2>Skills</h2>
-  <div class="skills">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C++-F7DF1E?style=for-the-badge&logo=C++&logoColor=black"/>
-    <section id="skills">
+
+<!-- SKILLS -->
+<section>
   <h2>Skills</h2>
 
   <div class="skills-grid">
@@ -107,10 +115,14 @@
 
   </div>
 </section>
-</section>
+
+<!-- CONTACT -->
+<section>
   <h2>Contact</h2>
   <p>Email: maryhelengonzalez51@gmail.com</p>
   <p>GitHub: github.com/maryhelengonzalez</p>
-</section> 
+</section>
 
+</body>
+</html>
 
