@@ -127,6 +127,69 @@ new Chart(ctx, {
 });
 
 </script>
+  <script>
+
+const ctx = document.getElementById('skillsChart');
+
+new Chart(ctx, {
+
+  type: 'radar',
+
+  data: {
+
+    labels: ['Python','Networking','Linux','Cybersecurity','JavaScript','Docker'],
+
+    datasets: [{
+
+      label: 'Skill Level',
+
+      data: [90,85,80,92,75,70],
+
+      fill: true,
+
+      backgroundColor: 'rgba(56, 189, 248, 0.2)',
+
+      borderColor: '#38bdf8',
+
+      pointBackgroundColor: '#ff7aa2'
+
+    }]
+
+  },
+
+  options: {
+
+    scales: {
+
+      r: {
+
+        angleLines: { color: '#334155' },
+
+        grid: { color: '#334155' },
+
+        pointLabels: { color: 'white' },
+
+        ticks: { display: false }
+
+      }
+
+    },
+
+    plugins: {
+
+      legend: {
+
+        labels: { color: 'white' }
+
+      }
+
+    }
+
+  }
+
+});
+
+</script>
 
 </body>
 
