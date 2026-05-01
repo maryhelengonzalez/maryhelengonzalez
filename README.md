@@ -91,3 +91,7 @@ This system automates the workflow by:
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+MONGO_URI=your_mongodb_uri
+SECRET_KEY=your_secret_key
+OPENAI_API_KEY=your_openai_key
