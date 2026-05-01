@@ -92,7 +92,7 @@ a {
 
   object-fit: cover;
 
-  object-position: center;
+  object-position: 50% 25%;
 
   margin-top: 20px;
 
