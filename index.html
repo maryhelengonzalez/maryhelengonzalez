@@ -67,7 +67,122 @@
       object-position: 50%  25%; 
       border: 3px solid #38bdf8;
     }
-      
+     #contact {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 80px 20px;
+
+  background: #fafafa;
+
+}
+
+.contact-card {
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  max-width: 600px;
+
+  width: 100%;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  text-align: center;
+
+}
+
+.contact-card h2 {
+
+  font-size: 2rem;
+
+  margin-bottom: 15px;
+
+}
+
+.contact-text {
+
+  font-size: 14px;
+
+  color: #666;
+
+  margin-bottom: 25px;
+
+  line-height: 1.6;
+
+}
+
+.contact-card input,
+
+.contact-card textarea {
+
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  border: 1px solid #eee;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+
+}
+
+.contact-card input:focus,
+
+.contact-card textarea:focus {
+
+  border-color: #ff7aa2;
+
+  outline: none;
+
+}
+
+.contact-card textarea {
+
+  min-height: 120px;
+
+  resize: none;
+
+}
+
+.contact-card button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  background: linear-gradient(135deg, #ff7aa2, #ffb6c1);
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+}
+
+.contact-card button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(255, 122, 162, 0.3);
+}
   </style>
 </head>
 
@@ -204,32 +319,47 @@ new Chart(ctx, {
   <h2>Contact</h2>
   <p>Email: maryhelengonzalez51@gmail.com</p>
   <p>GitHub: github.com/maryhelengonzalez</p>
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <p>Have a question or want to work together? Send me a message.</p>
 
-  <form id="contact-form">
-    <div class="input-group">
+<section id="contact">
+
+  <div class="contact-card">
+
+    <h2>Let’s Stay In Touch 💌</h2>
+
+    <p class="contact-text">
+
+      I’m currently focused on building side projects that solve real-world problems 
+
+      across Software Engineering, AI, and Data Engineering.
+
+      <br /><br />
+
+      Whether you have a project idea, want to collaborate, or just want to connect—
+
+      I’d love to hear from you.
+
+    </p>
+
+    <form id="contact-form">
+
       <input type="text" id="name" placeholder="Your Name" required />
-    </div>
 
-    <div class="input-group">
       <input type="email" id="email" placeholder="Your Email" required />
-    </div>
 
-    <div class="input-group">
       <input type="text" id="subject" placeholder="Subject" required />
-    </div>
 
-    <div class="input-group">
-      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-    </div>
+      <textarea id="message" placeholder="Type your message here..." required></textarea>
 
-    <button type="submit" class="send-btn">
-      Send Message →
-    </button>
-  </form>
+      <button type="submit">
 
-  <p id="form-status"></p>
-</section>
+        Send Message ✉️
+
+      </button>
+
+    </form>
+
+    <p id="form-status"></p>
+
+  </div>
+
 </section>
