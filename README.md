@@ -1,97 +1,67 @@
-# 📊 Loan AI Intelligence Dashboard
+# 🌐 Maryhelen Gonzalez – Portfolio Website
 
-A full-stack AI-powered financial analysis platform that automates loan document processing, extracts insights, and evaluates risk using machine learning and large language models.
+A personal developer portfolio showcasing my projects, skills, and experience in Software Engineering and Cybersecurity.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Site
 
-https://loan-ai-platform.vercel.app/
+https://maryhelengonzalez.github.io/maryhelengonzalez/
 
 ---
 
 ## 🧠 Overview
 
-Loan processing in financial institutions is often manual, slow, and error-prone.  
-This system automates the workflow by:
+This portfolio website highlights my work in:
 
-- Parsing uploaded loan documents (PDF)
-- Extracting key financial information
-- Generating AI-powered risk analysis
-- Storing user-specific document history
-- Visualizing insights in a dashboard
+- Full-stack development
+- Cybersecurity projects
+- AI-powered applications
+- Backend engineering with FastAPI and Python
+
+It serves as a central hub for recruiters and collaborators to view my projects and technical background.
 
 ---
 
 ## ⚙️ Features
 
-- 📄 Upload and process PDF loan documents  
-- 🧠 AI-powered analysis using OpenAI GPT models  
-- 📊 Risk classification (Low / Medium / High)  
-- 📈 Dashboard with financial insights  
-- 🔐 JWT authentication system  
-- 🗂 User-specific document history  
-- 🌐 Full-stack deployed application  
+- 📄 Project showcase section
+- 💼 Professional skills overview
+- 🔗 Direct links to GitHub projects
+- 🌐 Responsive design for mobile and desktop
+- 📬 Contact information section
 
 ---
 
-## 🏗 Tech Stack
+## 🛠 Tech Stack
 
-### Frontend
-- React
-- JavaScript
-- Axios
-- Recharts
-
-### Backend
-- FastAPI
-- Python
-- Uvicorn
-- pdfplumber
-
-### Database
-- MongoDB Atlas
-
-### AI
-- OpenAI API (GPT-4o-mini)
-
-### Deployment
-- Vercel (Frontend)
-- Render (Backend)
+- HTML5
+- CSS3
+- JavaScript (basic interactivity)
+- GitHub Pages (hosting)
 
 ---
 
-## 🔐 Authentication Flow
+## 📌 Projects Highlighted
 
-- User registers an account  
-- Password is hashed using bcrypt  
-- JWT token is generated on login  
-- Token protects routes:
-  - `/upload`
-  - `/documents`
+- 📊 Loan AI Intelligence Dashboard  
+  Full-stack AI system for loan document analysis and risk scoring  
+  https://loan-ai-platform.vercel.app/
 
 ---
 
-## 📡 API Endpoints
+## 📈 Purpose
 
-| Method | Endpoint    | Description |
-|--------|------------|-------------|
-| POST   | /register  | Create user |
-| POST   | /login     | Authenticate user |
-| POST   | /upload    | Upload loan document (protected) |
-| GET    | /documents | Get user history (protected) |
+This website was built to:
+
+- Present my technical projects in one place
+- Demonstrate full-stack development experience
+- Showcase cybersecurity and AI engineering skills
+- Serve as my professional developer portfolio
 
 ---
 
-## ⚙️ Local Setup
+## 👩‍💻 Author
 
-### Backend
-
-```bash id="backendclean"
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-
-MONGO_URI=your_mongodb_uri
-SECRET_KEY=your_secret_key
-OPENAI_API_KEY=your_openai_key
+Maryhelen Gonzalez  
+Cybersecurity • Software Engineering • AI Systems
