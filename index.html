@@ -1,178 +1,151 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <title>Maryhelen Gonzalez | Portfolio</title>
 
+  <!-- CSS -->
+
   <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  color: white;
-  text-align: center;
 
-  background-color: #0f172a;
-  background-image: 
-    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(99,102,241,0.15), transparent 40%);
-}
-  
+  <!-- Chart.js -->
 
-    header {
-      padding: 100px 20px;
-    }
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+</head>
 
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: left;
-    }
+<body>
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-    }
+  <!-- Progress Bar -->
 
-    a {
-      color: #38bdf8;
-      margin-right: 15px;
-    }
+  <div id="progress"></div>
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-    canvas {
-  max-width: 500px;
-  margin: 30px auto;
-  display: block;
-}
-    .profile-pic {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top:20px;
-      object-position: 50%  25%; 
-      border: 3px solid white;
-    }
-   .contact-card {
+  <!-- HEADER -->
 
- background-color: transparent !important;
+  <header>
 
-  padding: 40px;
+    <h1>Maryhelen Gonzalez</h1>
 
-  border-radius: 20px;
+    <p>Software Engineer | AI | Data</p>
 
-  max-width: 600px;
+    <img src="your-image.jpg" class="profile-pic">
 
-  width: 100%;
+  </header>
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  <!-- ABOUT -->
 
-  text-align: center;
+  <section>
 
-}
+    <h2>About Me</h2>
 
-.contact-card h2 {
+    <p>
 
-  font-size: 2rem;
+      I build AI-powered applications and data-driven systems that solve real-world problems.
 
-  margin-bottom: 15px;
+      Focused on Software Engineering, AI Engineering, and Data Engineering.
 
-}
+    </p>
 
-.contact-text {
+  </section>
 
-  font-size: 14px;
+  <!-- SKILLS -->
 
-  color: white;
+  <section>
 
-  margin-bottom: 25px;
+    <h2>Skills</h2>
 
-  line-height: 1.6;
+    <div class="skills-grid">
 
-}
+      <div class="card">Python</div>
 
-.contact-card input,
+      <div class="card">JavaScript</div>
 
-.contact-card textarea {
+      <div class="card">React</div>
 
-  width: 100%;
+      <div class="card">Docker</div>
 
-  margin-bottom: 12px;
+      <div class="card">SQL</div>
 
-  padding: 12px;
+      <div class="card">Machine Learning</div>
 
-  border-radius: 12px;
+    </div>
 
-  border: 1px solid #eee;
+  </section>
 
-  font-size: 14px;
+  <!-- PROJECTS -->
 
-  transition: 0.2s ease;
+  <section>
 
-}
+    <h2>Projects</h2>
 
-.contact-card input:focus,
+    <div class="card">
 
-.contact-card textarea:focus {
+      <h3>Loan AI Platform</h3>
 
-  border-color: #ff7aa2;
+      <p>AI-powered loan decision system with risk scoring.</p>
 
-  outline: none;
+    </div>
 
-}
+    <div class="card">
 
-.contact-card textarea {
+      <h3>Cybersecurity ML Tool</h3>
 
-  min-height: 120px;
+      <p>Detects anomalies in logs and security events.</p>
 
-  resize: none;
+    </div>
 
-}
+  </section>
 
-.contact-card button {
+  <!-- CHART -->
 
-  width: 100%;
+  <section>
 
-  padding: 12px;
+    <h2>My Tech Usage</h2>
 
-  border-radius: 12px;
+    <canvas id="myChart"></canvas>
 
-  border: none;
+  </section>
 
-  background: linear-gradient(135deg, #ff7aa2, #ffb6c1);
+  <!-- CONTACT -->
 
-  color: white;
+  <section>
 
-  font-weight: bold;
+    <div class="contact-card">
 
-  cursor: pointer;
+      <h2>Let's Stay In Touch</h2>
 
-  transition: 0.3s ease;
+      <p class="contact-text">
 
-}
+        I’m currently building projects that solve real-world problems.
 
-.contact-card button:hover {
+        Let’s collaborate or connect!
 
-  transform: translateY(-2px);
+      </p>
 
-  box-shadow: 0 8px 20px rgba(255, 122, 162, 0.3);
-}
+      <input type="text" placeholder="Your Name">
 
+      <input type="email" placeholder="Your Email">
 
+      <textarea placeholder="Your Message"></textarea>
+
+      <button>Send Message</button>
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+    
   </style>
 </head>
 
