@@ -70,12 +70,18 @@
       
   </style>
 </head>
+<!-- SKILLS -->
 <section>
   <h2>Skills Radar</h2>
   <canvas id="skillsChart" width="400" height="400"></canvas>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- CONTACT -->
+<section>
+  <h2>Contact</h2>
+  <p>Email: maryhelengonzalez51@gmail.com</p>
+  <p>GitHub: github.com/maryhelengonzalez</p>
+</section>
 
 <script>
 const ctx = document.getElementById('skillsChart');
@@ -89,11 +95,26 @@ new Chart(ctx, {
       data: [90,85,80,92,75,70],
       fill: true,
       backgroundColor: 'rgba(56, 189, 248, 0.2)',
-      borderColor: '#38bdf8'
+      borderColor: '#38bdf8',
+      pointBackgroundColor: '#38bdf8'
     }]
+  },
+  options: {
+    scales: {
+      r: {
+        angleLines: { color: '#334155' },
+        grid: { color: '#334155' },
+        pointLabels: { color: 'white' },
+        ticks: { display: false }
+      }
+    },
+    plugins: {
+      legend: {
+        labels: { color: 'white' }
+      }
+    }
   }
 });
-</script>
 </script>
 <body>
 
