@@ -70,45 +70,30 @@
       
   </style>
 </head>
+<section>
+  <h2>Skills Radar</h2>
+  <canvas id="skillsChart" width="400" height="400"></canvas>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
 const ctx = document.getElementById('skillsChart');
 
 new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: [
-      'Python',
-      'Networking',
-      'Linux',
-      'Cybersecurity',
-      'JavaScript',
-      'Docker'
-    ],
+    labels: ['Python','Networking','Linux','Cybersecurity','JavaScript','Docker'],
     datasets: [{
       label: 'Skill Level',
-      data: [90, 85, 80, 92, 75, 70],
+      data: [90,85,80,92,75,70],
       fill: true,
       backgroundColor: 'rgba(56, 189, 248, 0.2)',
-      borderColor: '#38bdf8',
-      pointBackgroundColor: '#38bdf8'
+      borderColor: '#38bdf8'
     }]
-  },
-  options: {
-    scales: {
-      r: {
-        angleLines: { color: '#334155' },
-        grid: { color: '#334155' },
-        pointLabels: { color: 'white', font: { size: 14 } },
-        ticks: { display: false }
-      }
-    },
-    plugins: {
-      legend: {
-        labels: { color: 'white' }
-      }
-    }
   }
 });
+</script>
 </script>
 <body>
 
@@ -156,8 +141,28 @@ new Chart(ctx, {
   <section>
   <h2>Skills Radar</h2>
 
+  <canvas id="skillsChart"></canvas>
+</section>
+
+  <section>
+  <h2>Skills Radar</h2>
   <canvas id="skillsChart" width="400" height="400"></canvas>
 </section>
+
+<script>
+  const ctx = document.getElementById('skillsChart');
+
+  new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Python','Networking','Linux','Cybersecurity','JavaScript','Docker'],
+      datasets: [{
+        label: 'Skill Level',
+        data: [90,85,80,92,75,70]
+      }]
+    }
+  });
+</script>
 
 <!-- CONTACT -->
 <section>
