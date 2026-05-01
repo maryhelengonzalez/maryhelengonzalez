@@ -87,7 +87,7 @@ This system automates the workflow by:
 
 ### Backend
 
-```bash id="backendsetup"
+```bash id="backendclean"
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -95,6 +95,3 @@ uvicorn main:app --reload
 MONGO_URI=your_mongodb_uri
 SECRET_KEY=your_secret_key
 OPENAI_API_KEY=your_openai_key
-
-
-
