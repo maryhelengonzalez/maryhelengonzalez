@@ -5,7 +5,7 @@
   <title>Maryhelen Gonzalez | Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
   font-family: Arial, sans-serif;
@@ -53,6 +53,11 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 15px;
     }
+    canvas {
+  max-width: 500px;
+  margin: 30px auto;
+  display: block;
+}
     .profile-pic {
       width: 220px;
       height: 220px;
@@ -65,7 +70,46 @@
       
   </style>
 </head>
+<script>
+const ctx = document.getElementById('skillsChart');
 
+new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: [
+      'Python',
+      'Networking',
+      'Linux',
+      'Cybersecurity',
+      'JavaScript',
+      'Docker'
+    ],
+    datasets: [{
+      label: 'Skill Level',
+      data: [90, 85, 80, 92, 75, 70],
+      fill: true,
+      backgroundColor: 'rgba(56, 189, 248, 0.2)',
+      borderColor: '#38bdf8',
+      pointBackgroundColor: '#38bdf8'
+    }]
+  },
+  options: {
+    scales: {
+      r: {
+        angleLines: { color: '#334155' },
+        grid: { color: '#334155' },
+        pointLabels: { color: 'white', font: { size: 14 } },
+        ticks: { display: false }
+      }
+    },
+    plugins: {
+      legend: {
+        labels: { color: 'white' }
+      }
+    }
+  }
+});
+</script>
 <body>
 
 <header>
@@ -108,27 +152,11 @@
     <p><b>Tech Stack:</b> React, FastAPI, MongoDB, OpenAI API, Recharts, JWT Auth</p>
   </div>
 </section><!-- SKILLS -->
-<section>
-  <h2>Skills</h2>
 
-  <div class="skills-grid">
+  <section>
+  <h2>Skills Radar</h2>
 
-    <div class="card">
-      <h3>Advanced</h3>
-      <p>Python, Linux, Networking, Git</p>
-    </div>
-
-    <div class="card">
-      <h3>Intermediate</h3>
-      <p>JavaScript, React, Docker, MySQL</p>
-    </div>
-
-    <div class="card">
-      <h3>Familiar</h3>
-      <p>AWS, Java, CI/CD Concepts</p>
-    </div>
-
-  </div>
+  <canvas id="skillsChart" width="400" height="400"></canvas>
 </section>
 
 <!-- CONTACT -->
