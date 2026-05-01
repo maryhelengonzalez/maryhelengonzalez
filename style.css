@@ -1,16 +1,86 @@
+/* GLOBAL */
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+  color: white;
+
+  text-align: center;
+
+  background-color: #0f172a;
+
+  background-image: 
+
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 40%),
+
+    radial-gradient(circle at 80% 70%, rgba(99,102,241,0.15), transparent 40%);
 
 }
 
+/* HEADER */
 
-  display: grid;
+header {
 
-  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 20px;
 
-  gap: 15px;
+  text-align: center;
 
 }
 
-/* PROFILE IMAGE */
+h1 {
+
+  font-size: 48px;
+
+  margin-bottom: 10px;
+
+}
+
+/* SECTIONS */
+
+section {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+}
+
+/* CARDS */
+
+.card {
+
+  background: #1e293b;
+
+  padding: 20px;
+
+  margin: 15px 0;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+}
+
+/* LINKS */
+
+a {
+
+  color: #38bdf8;
+
+  margin-right: 15px;
+
+  text-decoration: none;
+
+}
+
+/* PROFILE IMAGE (CIRCLE FIX) */
 
 .profile-pic {
 
@@ -22,11 +92,25 @@
 
   object-fit: cover;
 
-  object-position: 50% 25%;
+  object-position: center;
+
+  margin-top: 20px;
 
   border: 3px solid white;
 
-  margin-top: 20px;
+}
+
+/* SKILLS GRID */
+
+.skills-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  justify-items: center;
 
 }
 
@@ -42,7 +126,7 @@ canvas {
 
 }
 
-/* CONTACT */
+/* CONTACT CARD */
 
 .contact-card {
 
@@ -60,13 +144,21 @@ canvas {
 
 }
 
+/* CONTACT TEXT */
+
 .contact-text {
 
   font-size: 14px;
 
-  margin-bottom: 20px;
+  color: white;
+
+  margin-bottom: 25px;
+
+  line-height: 1.6;
 
 }
+
+/* INPUTS */
 
 .contact-card input,
 
@@ -80,9 +172,23 @@ canvas {
 
   border-radius: 12px;
 
-  border: none;
+  border: 1px solid #eee;
+
+  font-size: 14px;
 
 }
+
+/* TEXTAREA */
+
+.contact-card textarea {
+
+  min-height: 120px;
+
+  resize: none;
+
+}
+
+/* BUTTON */
 
 .contact-card button {
 
@@ -103,4 +209,11 @@ canvas {
   cursor: pointer;
 
 }
-  
+
+.contact-card button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(255, 122, 162, 0.3);
+
+}
