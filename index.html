@@ -100,34 +100,7 @@
 
 </section>
 
-<!-- CHART SCRIPT -->
-
-<script>
-
-const ctx = document.getElementById('skillsChart');
-
-new Chart(ctx, {
-
-  type: 'radar',
-
-  data: {
-
-    labels: ['Python','Networking','Linux','Cybersecurity','JavaScript','Docker'],
-
-    datasets: [{
-
-      label: 'Skill Level',
-
-      data: [90,85,80,92,75,70]
-
-    }]
-
-  }
-
-});
-
-</script>
-  <script>
+<<script>
 
 const ctx = document.getElementById('skillsChart');
 
@@ -147,11 +120,17 @@ new Chart(ctx, {
 
       fill: true,
 
-      backgroundColor: 'rgba(56, 189, 248, 0.2)',
+      // 🔴 POINTS = RED
+
+      pointBackgroundColor: 'red',
+
+      pointBorderColor: 'red',
+
+      // line color (optional)
 
       borderColor: '#38bdf8',
 
-      pointBackgroundColor: 'red'
+      backgroundColor: 'rgba(56, 189, 248, 0.2)'
 
     }]
 
@@ -163,13 +142,35 @@ new Chart(ctx, {
 
       r: {
 
-        angleLines: { color: '#334155' },
+        // 🔵 GRID = BLUE
 
-        grid: { color: '#334155' },
+        grid: {
 
-        pointLabels: { color: 'white' },
+          color: '#3b82f6'   // blue grid lines
 
-        ticks: { display: false }
+        },
+
+        angleLines: {
+
+          color: '#3b82f6'   // radial lines
+
+        },
+
+        // ❌ REMOVE NUMBERS (ticks)
+
+        ticks: {
+
+          display: false
+
+        },
+
+        // labels (Python, Linux, etc)
+
+        pointLabels: {
+
+          color: 'white'
+
+        }
 
       }
 
@@ -179,7 +180,11 @@ new Chart(ctx, {
 
       legend: {
 
-        labels: { color: 'white' }
+        labels: {
+
+          color: 'white'
+
+        }
 
       }
 
