@@ -1,98 +1,89 @@
-# 👋 Hi, I'm Maryhelen Gonzalez
+# 📊 Loan AI Intelligence Dashboard
 
-🎓 Computer Science & Information Security Graduate  
-🔐 Cybersecurity & Software Engineering Focused | Hands-on experience in network security and system vulnerabilities  
-📍 Based in New York  
+A full-stack AI-powered financial analysis platform that extracts insights from loan documents, evaluates risk, and generates structured financial summaries using machine learning and LLMs.
 
 ---
 
-## 🚀 About Me
-I’m a Computer Science graduate focused on cybersecurity and system-level problem solving.  
-I have hands-on experience simulating real-world attacks, analyzing vulnerabilities, and building secure applications.
-
-- Strong foundation in networking, operating systems, and security principles  
-- Experience working in Linux environments and virtualized lab setups  
-- Built projects involving network scanning, secure communication, and firewall evasion techniques  
+## 🚀 Live Demo
+https://loan-ai-platform.vercel.app/
 
 ---
 
-## 🔥 Projects
+## 🧠 Problem It Solves
 
-### 🔐 Firewall Evasion & Penetration Testing  
-🔗 https://github.com/maryhelengonzalez/firewall-evasion-lab  
+Financial institutions process large volumes of loan documents manually, which is:
+- slow
+- error-prone
+- expensive
 
-**Tools:** Netcat, Linux (Ubuntu), TCP/IP  
-
-- Simulated firewall evasion techniques by establishing reverse shell connections  
-- Used Netcat to bypass port restrictions and test network filtering rules  
-- Analyzed how firewall configurations detect and block unauthorized traffic  
-
-📌 Demonstrates hands-on experience in network security and penetration testing  
-
----
-
-### 🌐 Network Scanner (Python)  
-🔗 https://github.com/maryhelengonzalez/network-scanner  
-
-**Tools:** Python, Sockets, TCP/IP  
-
-- Developed a Python-based port scanner to detect open ports on target systems  
-- Implemented socket programming to establish connections and analyze responses  
-- Identified potential vulnerabilities in exposed network services  
-
-📌 Demonstrates understanding of networking protocols and security assessment  
+This system automates:
+- document analysis
+- risk classification
+- financial insight extraction
 
 ---
 
-### 🛡️ Secure Chat Application  
-🔗 https://github.com/maryhelengonzalez/secure-chat-app  
+## ⚙️ Features
 
-**Tools:** Python/Java, Encryption  
-
-- Built a secure messaging application with basic encryption for data protection  
-- Implemented client-server communication to transmit messages securely  
-- Explored cryptographic concepts to protect user data  
-
-📌 Demonstrates knowledge of secure software development and encryption basics  
-
----
-
-## 🧠 Technical Skills
-
-**Languages:** Python, Java, C++, SQL, Bash  
-
-**Frameworks & Tools:** Docker, Jenkins, Git, CMake, React, Django  
-
-**Systems & Platforms:** Linux, Windows, Virtual Machines (Ubuntu)  
-
-**Cloud:** AWS, Google Cloud  
-
-**Databases:** MySQL, PostgreSQL, MongoDB  
-
-**Security & Networking:** Network Security, Penetration Testing, Vulnerability Analysis  
-
-**Concepts:** Operating Systems, Distributed Systems, CI/CD, System Design  
-
-**AI/ML:** Large Language Models (LLMs), Prompt Engineering  
+- 📄 Upload PDF loan documents
+- 🧠 AI-powered document analysis (OpenAI API)
+- 📊 Risk scoring (Low / Medium / High)
+- 📈 Data visualization dashboard
+- 🔐 JWT authentication system
+- 🗂 User-specific document history
+- 🌐 Full-stack deployment
 
 ---
 
-## 📫 Contact Me
+## 🏗 Tech Stack
 
-- 📧 Email: maryhelengonzalez51@gmail.com  
-- 💼 LinkedIn: https://linkedin.com/in/maryhelengonzalez  
-- 💻 GitHub: https://github.com/maryhelengonzalez  
+### Frontend
+- React
+- JavaScript
+- Recharts
+- Axios
+
+### Backend
+- FastAPI
+- Python
+- Uvicorn
+
+### Database
+- MongoDB Atlas
+
+### AI
+- OpenAI GPT-4o-mini
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
 
 ---
 
-## 📊 GitHub Stats
+## 🔐 Authentication Flow
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=maryhelengonzalez&show_icons=true&theme=default)
+1. User registers
+2. Password is hashed (bcrypt)
+3. JWT token is issued on login
+4. Token secures protected routes (/upload, /documents)
 
 ---
 
-## 🧰 Tools I Use
+## 📡 API Endpoints
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-000000?style=for-the-badge)
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /register | Create user |
+| POST | /login | Authenticate user |
+| POST | /upload | Upload loan document |
+| GET | /documents | Get user history |
+
+---
+
+## ⚙️ Local Setup
+
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
