@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,11 +8,7 @@
 
   <title>Maryhelen Gonzalez | Portfolio</title>
 
-  <!-- CSS -->
-
   <link rel="stylesheet" href="style.css">
-
-  <!-- Chart.js -->
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -21,183 +16,91 @@
 
 <body>
 
-  <!-- Progress Bar -->
-
-  <div id="progress"></div>
-
-  <!-- HEADER -->
-
-  <header>
-
-    <h1>Maryhelen Gonzalez</h1>
-
-    <p>Software Engineer | AI | Data</p>
-
-    <img src="your-image.jpg" class="profile-pic">
-
-  </header>
-
-  <!-- ABOUT -->
-
-  <section>
-
-    <h2>About Me</h2>
-
-    <p>
-
-      I build AI-powered applications and data-driven systems that solve real-world problems.
-
-      Focused on Software Engineering, AI Engineering, and Data Engineering.
-
-    </p>
-
-  </section>
-
-  <!-- SKILLS -->
-
-  <section>
-
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="card">Python</div>
-
-      <div class="card">JavaScript</div>
-
-      <div class="card">React</div>
-
-      <div class="card">Docker</div>
-
-      <div class="card">SQL</div>
-
-      <div class="card">Machine Learning</div>
-
-    </div>
-
-  </section>
-
-  <!-- PROJECTS -->
-
-  <section>
-
-    <h2>Projects</h2>
-
-    <div class="card">
-
-      <h3>Loan AI Platform</h3>
-
-      <p>AI-powered loan decision system with risk scoring.</p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Cybersecurity ML Tool</h3>
-
-      <p>Detects anomalies in logs and security events.</p>
-
-    </div>
-
-  </section>
-
-  <!-- CHART -->
-
-  <section>
-
-    <h2>My Tech Usage</h2>
-
-    <canvas id="myChart"></canvas>
-
-  </section>
-
-  <!-- CONTACT -->
-
-  <section>
-
-    <div class="contact-card">
-
-      <h2>Let's Stay In Touch</h2>
-
-      <p class="contact-text">
-
-        I’m currently building projects that solve real-world problems.
-
-        Let’s collaborate or connect!
-
-      </p>
-
-      <input type="text" placeholder="Your Name">
-
-      <input type="email" placeholder="Your Email">
-
-      <textarea placeholder="Your Message"></textarea>
-
-      <button>Send Message</button>
-
-    </div>
-
-  </section>
-
-  <!-- JS -->
-
-  <script src="script.js"></script>
-
-</body>
-
-</html>
-    
-  </style>
-</head>
-
-<body>
-
 <header>
+
   <h1>Maryhelen Gonzalez</h1>
+
   <p>Cybersecurity • Software Engineering • Network Security</p>
+
   <p>📍 New York</p>
-  <!-- PROFILE IMAGE -->
+
   <img src="Mesmall.jpeg" class="profile-pic">
 
-  
+</header>
 
 <!-- ABOUT -->
+
 <section>
+
   <h2>About Me</h2>
-  <p>I specialize in cybersecurity, system security, and network defense, focusing on building and analyzing secure systems, identifying vulnerabilities, and simulating real-world attack scenarios to strengthen infrastructure resilience.
+
+  <p>
+
+    I specialize in cybersecurity, system security, and network defense,
+
+    focusing on building and analyzing secure systems and identifying vulnerabilities.
+
   </p>
+
 </section>
 
 <!-- PROJECTS -->
 
 <section>
+
   <h2>Projects</h2>
 
   <div class="card">
+
     <h3>📊 Loan AI Intelligence Dashboard</h3>
 
-    <a href="https://github.com/maryhelengonzalez/loan-ai-platform" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/maryhelengonzalez/loan-ai-platform" target="_blank">
+
       View Code
+
     </a>
 
-    <a href="https://loan-ai-platform.vercel.app/" target="_blank" rel="noopener noreferrer">
-  Live Demo →
-</a>
+    <a href="https://loan-ai-platform.vercel.app/" target="_blank">
+
+      Live Demo →
+
+    </a>
 
     <p>
+
       Full-stack AI-powered financial analysis dashboard built with React, FastAPI, and MongoDB.
-      Upload loan documents, extract insights, and visualize risk scoring.
+
     </p>
 
-    <p><b>Tech Stack:</b> React, FastAPI, MongoDB, OpenAI API, Recharts, JWT Auth</p>
+    <p><b>Tech Stack:</b> React, FastAPI, MongoDB, OpenAI API</p>
+
   </div>
-  
-  
-<section>
-  <h2>Skills Radar</h2>
-  <canvas id="skillsChart" width="400" height="400"></canvas>
+
 </section>
-  
+
+<!-- SKILLS RADAR -->
+
+<section>
+
+  <h2>Skills Radar</h2>
+
+  <canvas id="skillsChart"></canvas>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
+
+  <h2>Contact</h2>
+
+  <p>Email: maryhelengonzalez51@gmail.com</p>
+
+  <p>GitHub: github.com/maryhelengonzalez</p>
+
+</section>
+
+<!-- CHART SCRIPT -->
 
 <script>
 
@@ -215,47 +118,9 @@ new Chart(ctx, {
 
       label: 'Skill Level',
 
-      data: [90,85,80,92,75,70],
-
-      fill: true,
-
-      backgroundColor: 'rgba(56, 189, 248, 0.2)',
-
-      borderColor: '#38bdf8',
-
-      pointBackgroundColor: 'red'
+      data: [90,85,80,92,75,70]
 
     }]
-
-  },
-
-  options: {
-
-    scales: {
-
-      r: {
-
-        angleLines: { color: '#334155' },
-
-        grid: { color: '#334155' },
-
-        pointLabels: { color: 'white' },
-
-        ticks: { display: false }
-
-      }
-
-    },
-
-    plugins: {
-
-      legend: {
-
-        labels: { color: 'white' }
-
-      }
-
-    }
 
   }
 
@@ -263,67 +128,6 @@ new Chart(ctx, {
 
 </script>
 
-<script>
-  const ctx = document.getElementById('skillsChart');
+</body>
 
-  new Chart(ctx, {
-    type: 'radar',
-    data: {
-      labels: ['Python','Networking','Linux','Cybersecurity','JavaScript','Docker'],
-      datasets: [{
-        label: 'Skill Level',
-        data: [90,85,80,92,75,70]
-      }]
-    }
-  });
-</script>
-
-<!-- CONTACT -->
-<section>
-  <h2>Contact</h2>
-  <p>Email: maryhelengonzalez51@gmail.com</p>
-  <p>GitHub: github.com/maryhelengonzalez</p>
-
-<section id="contact">
-
-  <div class="contact-card">
-
-    <h2>Let’s Stay In Touch 💌</h2>
-
-    <p class="contact-text">
-
-      I’m currently focused on building side projects that solve real-world problems 
-
-      across Software Engineering, AI, and Data Engineering.
-
-      <br /><br />
-
-      Whether you have a project idea, want to collaborate, or just want to connect—
-
-      I’d love to hear from you.
-
-    </p>
-
-    <form id="contact-form">
-
-      <input type="text" id="name" placeholder="Your Name" required />
-
-      <input type="email" id="email" placeholder="Your Email" required />
-
-      <input type="text" id="subject" placeholder="Subject" required />
-
-      <textarea id="message" placeholder="Type your message here..." required></textarea>
-
-      <button type="submit">
-
-        Send Message ✉️
-
-      </button>
-
-    </form>
-
-    <p id="form-status"></p>
-
-  </div>
-
-</section> 
+</html>
