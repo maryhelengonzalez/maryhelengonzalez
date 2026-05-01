@@ -63,12 +63,12 @@ This system automates the workflow by:
 
 ## 🔐 Authentication Flow
 
-1. User registers an account  
-2. Password is hashed using bcrypt  
-3. JWT token is generated on login  
-4. Token protects routes:
-   - `/upload`
-   - `/documents`
+- User registers an account  
+- Password is hashed using bcrypt  
+- JWT token is generated on login  
+- Token protects routes:
+  - `/upload`
+  - `/documents`
 
 ---
 
@@ -87,7 +87,7 @@ This system automates the workflow by:
 
 ### Backend
 
-```bash
+```bash id="backendsetup"
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -95,3 +95,6 @@ uvicorn main:app --reload
 MONGO_URI=your_mongodb_uri
 SECRET_KEY=your_secret_key
 OPENAI_API_KEY=your_openai_key
+
+
+
